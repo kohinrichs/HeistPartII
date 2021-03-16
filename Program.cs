@@ -6,7 +6,16 @@ namespace HeistPartII
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Bank FirstNational = new Bank();
+
+            FirstNational.AlarmScore = 60;
+
+            Hacker gary = new Hacker();
+
+            gary.Name = "Gary";
+            gary.SkillLevel = 50;
+            gary.PerformSkill(FirstNational);
+
         }
     }
 }
